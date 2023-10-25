@@ -18,7 +18,6 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
   return (
     <div className="inicio-container">
       <header className="header">
-        <img className="logo" src={logo} alt="Logo" />
         <h1 className="heading">Sistema de Tickets</h1>
         {isLoggedIn && isAdmin ? (
           // Si está logueado como administrador, muestra el botón "Cerrar Sesión"
@@ -35,10 +34,10 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
       <div className="content">
         <div className="button-container-vertical">
           <Link to="/crear-ticket" className="large-button">
-            Crear Ticket
+            Crear Ticket de alumno ya ingresado
           </Link>
           <Link to="/alumno" className="large-button">
-            Nuevo ingreso
+            Nuevo ingreso de alumno
           </Link>
           {isLoggedIn && isAdmin && (
             <Link to="/crud-catalogos" className="large-button">
@@ -52,12 +51,12 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
           )}
           {isLoggedIn && isAdmin && (
             <Link to="/dashboard" className="large-button">
-              Dashboard Municipios
+              Grafica por Municipios
             </Link>
           )}
           {isLoggedIn && isAdmin && (
             <Link to="/dashboard-total" className="large-button">
-              Dashboard
+              Grafica total
             </Link>
           )}
           {showModal && <Modal onClose={handleCloseModal} />}
