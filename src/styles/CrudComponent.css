@@ -1,0 +1,153 @@
+.crud-container {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+.crud-container h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container-crud {
+  background-color: #303030;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.container-crud button {
+  background-color: #ff4646;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.container-crud button:hover {
+  background-color: #d93232;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="password"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #ff4646;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.button-group button:hover {
+  background-color: #d93232;
+}
+
+.form-container-crud {
+  background-color: #303030;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.form-container-crud input[type="text"],
+.form-container-crud input[type="email"],
+.form-container-crud input[type="password"],
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-group button {
+  background-color: #ff4646;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.button-group button:hover {
+  background-color: #d93232;
+}
+
+/* TablaEstilos.css */
+
+.mi-tabla-estilizada {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.mi-tabla-estilizada th,
+.mi-tabla-estilizada td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.mi-tabla-estilizada th {
+  background-color: #ff4646;
+}

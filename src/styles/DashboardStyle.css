@@ -1,0 +1,19 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #303030;
+    border-radius: 8px;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los gráficos (aún no implementados) */
+  
+  /* Estilos para los filtros (aún no implementados) */
+  

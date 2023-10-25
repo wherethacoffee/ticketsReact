@@ -1,0 +1,97 @@
+/* Estilos generales para el contenedor principal */
+.container-tickets {
+  display: flex;
+  background-color: #303030; /* Color de fondo del contenedor */
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* Estilos para el contenedor del contenido principal y formulario */
+.content-container {
+  display: flex;
+  width: 100%; /* Ocupa todo el ancho del contenedor principal */
+  padding: 10px;
+}
+
+/* Estilos para el contenido principal */
+.main-content {
+  flex: 1; /* Hace que este contenedor ocupe todo el espacio disponible */
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 5px;
+  margin-right: 20px; /* Márgenes a la derecha para separarlo del formulario */
+}
+
+/* Estilos para el contenedor del formulario */
+.form-container {
+  width: 35%; /* Porcentaje del espacio disponible para el formulario */
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos para la barra de búsqueda */
+.search-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.search-container input[type="text"] {
+  flex: 1; /* Hace que el campo de búsqueda ocupe todo el espacio disponible horizontalmente */
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.search-container button {
+  padding: 10px 20px;
+  background-color: #ff4646;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para la lista de turnos */
+.turno-list {
+  list-style: none;
+  padding: 0;
+}
+
+.turno-list li {
+  background-color: #303030;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilos para el contenedor de detalles del turno */
+.details-container {
+  background-color: #303030;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* Estilos para los botones en el contenedor de acciones */
+.actions-container button {
+  margin-right: 10px;
+  background-color: #ff4646;
+  color: white;
+  border: none;
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+.actions-container button:last-child {
+  margin-right: 0; /* Elimina el margen derecho del último botón para evitar espacio adicional */
+}
+
+/* Estilos para el formulario de registro de nuevo turno */
+.form-container button {
+  margin-top: 10px;
+  background-color: #ff4646;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}

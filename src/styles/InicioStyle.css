@@ -1,0 +1,162 @@
+/* styles/InicioStyle.css */
+
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+.inicio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #303030;
+  border-radius: 8px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.heading {
+  font-size: 24px;
+}
+
+.small-button {
+  background-color: #ff4646;
+  color: #ffffff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin: 10px;
+  text-align: center;
+}
+
+.large-button {
+  width: 200px; /* Establece el ancho fijo para los botones, ajusta según sea necesario */
+  height: 50px; /* Establece la altura fija para los botones, ajusta según sea necesario */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d93232; /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  text-decoration: none; /* Elimina el subrayado del enlace */
+  margin-bottom: 10px; /* Espaciado entre los botones */
+  border: none; /* Elimina el borde del botón */
+  border-radius: 5px; /* Borde redondeado del botón */
+  font-size: 16px; /* Tamaño de la fuente del texto del botón */
+}
+
+.small-button:hover,
+.large-button:hover {
+  background-color: #d93232;
+}
+
+/* Estilos específicos para el botón "Iniciar Sesión" */
+.small-button {
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+/* Estilos específicos para el botón "Crear Ticket" */
+.large-button:first-of-type {
+  margin-top: 20px;
+}
+
+/* Estilos específicos para el botón "Modificar Tickets" */
+.large-button:last-of-type {
+  margin-bottom: 20px;
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 20px auto;
+}
+
+.progress-bar-step {
+  flex: 1;
+  height: 10px;
+  background-color: #ddd; /* Color de fondo de la barra de progreso inactiva */
+}
+
+.progress-bar-step.active {
+  background-color: #ff4646; /* Color de fondo de la barra de progreso activa */
+}
+
+.button-container-vertical {
+  display: flex;
+  flex-direction: column; /* Esto hará que los elementos se muestren en una columna en lugar de una fila */
+  align-items: center; /* Esto centrará los elementos horizontalmente en el contenedor */
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .header {
+    /* Estilos específicos para la cabecera en pantallas pequeñas */
+    padding: 10px;
+  }
+
+  .small-button,
+  .large-button {
+    /* Estilos específicos para los botones en pantallas pequeñas */
+    font-size: 18px;
+    padding: 14px 25px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header {
+    /* Estilos específicos para la cabecera en pantallas medianas */
+    padding: 15px;
+  }
+
+  .small-button,
+  .large-button {
+    /* Estilos específicos para los botones en pantallas medianas */
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .header {
+    /* Estilos específicos para la cabecera en pantallas grandes */
+    padding: 20px;
+  }
+
+  .small-button,
+  .large-button {
+    /* Estilos específicos para los botones en pantallas grandes */
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
+}

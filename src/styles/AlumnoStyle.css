@@ -1,0 +1,76 @@
+body {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form-container-alumnos {
+    width: 80%;
+    margin-top: 50px;
+    background-color: #303030;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .form h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  
+  button {
+    background-color: #ff4646;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #d93232;
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* Asegúrate de que no haya márgenes o padding en este contenedor */
+  }
+  
+  .button-container {
+    background-color: #ff4646;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* Agrega márgenes horizontales para separar los botones */
+    margin-right: 10px; /* Ajusta según sea necesario */
+  }
+  
+  .button-container:last-child {
+    margin-right: 0; /* Elimina el margen derecho del último botón */
+  }
+  
+  .button-container:hover {
+    background-color: #d93232;
+  }
+  

@@ -1,0 +1,133 @@
+body {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-box {
+  text-align: center;
+  background-color: #2a2a2a;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  width: 300px;
+}
+
+.login-logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-field-login {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ffffff;
+  background-color: #2a2a2a;
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none; /* Elimina el contorno del input al hacer clic en él */
+}
+
+/* Estilos para el captcha */
+.g-recaptcha {
+  margin: 0 auto;
+  margin-top: 10px;
+  text-align: center; /* Centra el contenido del captcha */
+  max-width: 304px; /* Establece un ancho máximo para el captcha */
+}
+
+.login-button,
+.create-account-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+}
+
+.login-button:hover,
+.create-account-button:hover {
+  background-color: #0056b3;
+}
+
+.g-recaptcha {
+  min-height: 78px; /* Establece una altura mínima para el contenedor de ReCAPTCHA */
+}
+
+.g-recaptcha {
+  z-index: 9999; /* Establece un z-index alto para el contenedor de ReCAPTCHA */
+  .login-button {
+    margin-top: 20px; /* Ajusta el margen superior del botón de iniciar sesión */
+  }
+}
+
+.error-message {
+  color: red; /* Establece el color del texto de error a rojo */
+  margin-top: 10px;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .login-box {
+    width: 90%; /* Ajusta el ancho del cuadro de login para pantallas pequeñas */
+  }
+
+  .input-field-login,
+  .login-button,
+  .create-account-button {
+    font-size: 12px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas pequeñas */
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .login-box {
+    width: 70%; /* Ajusta el ancho del cuadro de login para pantallas medianas */
+  }
+
+  .input-field-login,
+  .login-button,
+  .create-account-button {
+    font-size: 14px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas medianas */
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .login-box {
+    width: 50%; /* Ajusta el ancho del cuadro de login para pantallas grandes */
+  }
+
+  .input-field-login,
+  .login-button,
+  .create-account-button {
+    font-size: 16px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas grandes */
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
+}
