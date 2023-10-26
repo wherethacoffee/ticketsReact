@@ -51,21 +51,21 @@ function App() {
             element={<Inicio isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
           />
           <Route
-            path="/iniciar-sesion"
+            path="/login"
             element={<Login onLogin={handleLogin} />}
           />
           <Route
-            path="/crear-ticket"
+            path="/crear-ticket-existente"
             element={
               <RegistroTickets isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />
             }
           />
           <Route
-            path="/alumno"
+            path="/crear-ticket-nuevo"
             element={<Alumno isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
           />
           <Route
-            path="/crear-cuenta"
+            path="/signup"
             element={<CrearUsuario isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
           />
           <Route
@@ -79,7 +79,7 @@ function App() {
             }
           />
           <Route
-            path="/dashboard"
+            path="/grafica-municipio"
             element={
               <ProtectedRoute
                 element={<Dashboards isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
@@ -89,7 +89,7 @@ function App() {
             }
           />
           <Route
-            path="/dashboard-total"
+            path="/grafica-total"
             element={
               <ProtectedRoute
                 element={<Dashboard_total isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
@@ -99,7 +99,7 @@ function App() {
             }
           />
           <Route
-            path="/crud-catalogos"
+            path="/catalogos"
             element={
               <ProtectedRoute
                 element={<CrudComponent isLoggedIn={isLoggedIn} isAdmin={isAdmin} onLogout={handleLogout} />}
