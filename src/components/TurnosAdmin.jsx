@@ -174,15 +174,7 @@ const TurnoAdminComponent = () => {
     <div className="container-tickets" id="turno-container">
       {/* Componente para la búsqueda por CURP o nombre */}
       <div className="main-content">
-        <div className="search-container">
-          <input
-            type="text"
-            placeholder="Buscar por CURP o nombre"
-            value={searchValue}
-            onChange={(e) => setSearchValue(e.target.value)}
-          />
-          <button onClick={handleSearch}>Buscar</button>
-        </div>
+        
 
         {/* Lista de turnos */}
         <ul className="turno-list">
@@ -367,7 +359,7 @@ const TurnoAdminComponent = () => {
       {/* Formulario para registrar un nuevo turno */}
       <div className="form-container">
         <div>
-          <h2>Registrar Nuevo Turno</h2>
+          <h2>Agregar o modificar turno</h2>
         </div>
         {/* Implementa el formulario para recopilar la información del nuevo turno */}
         {/* y llama a la función handleRegister al hacer clic en un botón */}

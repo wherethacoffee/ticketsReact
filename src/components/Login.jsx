@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
-import logo from "../images/iniciar-sesion.png";
+import loginLogo from "../images/login_logo.png";
 import "../styles/LoginStyle.css";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { loginAdmin } from "../services/admin.services";
 
 const Login = ({ onLogin }) => {
@@ -48,21 +49,20 @@ const Login = ({ onLogin }) => {
   return (
     <div className="login-container">
       <div className="login-box">
-        <img className="login-logo" src={logo} alt="Logo" />
+        <img className="login-logo" src={loginLogo} alt="Logo"/>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
-            <label htmlFor="username">Usuario:</label>
+            <label htmlFor="username">Nombre de usuario</label>
             <input
               type="text"
               id="username"
               name="username"
               required
-              placeholder="Ejemplo: usuario123"
               className="input-field-login"
             />
           </div>
           <div className="form-group-pass">
-            <label htmlFor="password">Contraseña:</label>
+            <label htmlFor="password">Contraseña</label>
             <input
               type="password"
               id="password"
@@ -80,12 +80,12 @@ const Login = ({ onLogin }) => {
           </div>
           {errorMessage && <p className="error-message">{errorMessage}</p>}
           <button type="submit" className="login-button">
-            Acceder
+            Ingresar
           </button>
         </form>
-        <button className="create-account-button">
-          <a href="/crear-cuenta">Crear una cuenta nueva</a>
-        </button>
+          <Link to="/signup" className="create-account-button">
+            Registrarse
+          </Link>
       </div>
     </div>
   );

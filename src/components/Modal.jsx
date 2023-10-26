@@ -25,9 +25,9 @@ const Modal = ({ onClose }) => {
         </span>
         <h2>Política de Cookies</h2>
         <p>
-          Este sitio web utiliza cookies para garantizar que obtenga la mejor
-          experiencia en nuestro sitio web. Al continuar utilizando nuestro
-          sitio, usted acepta nuestra política de cookies.
+          Esta página web hace uso de cookies,
+          al hacer click en "aceptar" aceptas cualquier
+          cookie de este sitio web
         </p>
         <button onClick={handleAcceptCookies}>Aceptar</button>
       </div>

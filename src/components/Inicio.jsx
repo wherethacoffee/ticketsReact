@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { useCookies } from "react-cookie";
 import Modal from "./Modal";
 import { useState } from "react";
+import tickeImg from "../images/ticket_img.jpg";
 
 const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
   const [cookies, setCookie] = useCookies(["cookieName"]);
@@ -18,7 +19,7 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
   return (
     <div className="inicio-container">
       <header className="header">
-        <h1 className="heading">Sistema de Tickets</h1>
+        <h1 className="heading">Bienvenido al sistema de tickets de trámites escolares!</h1>
         {isLoggedIn && isAdmin ? (
           // Si está logueado como administrador, muestra el botón "Cerrar Sesión"
           <button className="small-button" onClick={onLogout}>
@@ -26,21 +27,21 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
           </button>
         ) : (
           // Si no está logueado o no es administrador, muestra el botón "Iniciar Sesión"
-          <Link to="/iniciar-sesion" className="small-button">
+          <Link to="/login" className="small-button">
             Iniciar Sesión
           </Link>
         )}
       </header>
       <div className="content">
         <div className="button-container-vertical">
-          <Link to="/crear-ticket" className="large-button">
+          <Link to="/crear-ticket-existente" className="large-button">
             Crear Ticket de alumno ya ingresado
           </Link>
-          <Link to="/alumno" className="large-button">
+          <Link to="/crear-ticket-nuevo" className="large-button">
             Nuevo ingreso de alumno
           </Link>
           {isLoggedIn && isAdmin && (
-            <Link to="/crud-catalogos" className="large-button">
+            <Link to="/catalogos" className="large-button">
               Modificar Catalogos
             </Link>
           )}
@@ -50,18 +51,19 @@ const Inicio = ({ isLoggedIn, isAdmin, onLogout }) => {
             </Link>
           )}
           {isLoggedIn && isAdmin && (
-            <Link to="/dashboard" className="large-button">
+            <Link to="/grafica-municipio" className="large-button">
               Grafica por Municipios
             </Link>
           )}
           {isLoggedIn && isAdmin && (
-            <Link to="/dashboard-total" className="large-button">
+            <Link to="/grafica-total" className="large-button">
               Grafica total
             </Link>
           )}
           {showModal && <Modal onClose={handleCloseModal} />}
         </div>
       </div>
+      <img className="ticket-img" src={tickeImg} alt="ticket"/>
     </div>
   );
 };

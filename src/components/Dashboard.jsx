@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import { listSolicitudes } from "../services/turno.services";
 import { listMunicipio } from "../services/municipio.services";
 import Chart from "chart.js/auto";
@@ -90,7 +90,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Dashboard de Solicitudes</h1>
+      <h1>Grafica con todos los trámites pendientes y realizados por municipio</h1>
       <select onChange={(e) => handleMunicipioChange(e.target.value)}>
         <option value="">Selecciona un municipio</option>
         {municipios.map((municipio) => (
@@ -99,7 +99,7 @@ const Dashboard = () => {
           </option>
         ))}
       </select>
-      {solicitudesData && <Bar data={chartData} options={options} />}
+      {solicitudesData && <Pie data={chartData} options={options} />}
     </div>
   );
 };

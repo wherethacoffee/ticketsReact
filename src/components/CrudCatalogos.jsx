@@ -416,7 +416,7 @@ const CrudComponent = () => {
 
   return (
     <div className="crud-container">
-      <h1>Editor para Administradores</h1>
+      <h1>Editor para Administradores CRUD</h1>
       <div className="container-crud">
         <button
           className="container-crud"

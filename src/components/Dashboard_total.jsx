@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Bar } from "react-chartjs-2";
+import { Pie } from "react-chartjs-2";
 import { listSolicitudes } from "../services/turno.services";
 import Chart from "chart.js/auto";
 import "../styles/DashboardStyle.css";
@@ -48,8 +48,8 @@ const Dashboard_total = () => {
 
   return (
     <div className="dashboard-container">
-      <h1>Dashboard con todas las Solicitudes</h1>
-      {solicitudesData && <Bar data={chartData} options={options} />}
+      <h1>Grafica con todos los trámites pendientes y realizados</h1>
+      {solicitudesData && <Pie data={chartData} options={options} />}
     </div>
   );
 };

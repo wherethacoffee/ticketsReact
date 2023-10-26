@@ -3,6 +3,7 @@ import "../styles/CrearUsuarioStyle.css";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router-dom";
 import { registerAdmin } from "../services/admin.services";
+import signupLogo from "../images/signup_logo.png";
 
 const CrearUsuario = () => {
   const navigate = useNavigate();
@@ -39,10 +40,10 @@ const CrearUsuario = () => {
 
   return (
     <div className="container">
-      <h1>Crear Usuario</h1>
+      <img className="signup-logo" src={signupLogo} alt="Logo"/>
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="form-group">
-          <label htmlFor="usuario">Usuario:</label>
+          <label htmlFor="usuario">Ingrese un nombre de usuario</label>
           <input
             type="text"
             id="usuario"
@@ -60,7 +61,7 @@ const CrearUsuario = () => {
           {errors.usuario && <span>{errors.usuario.message}</span>}
         </div>
         <div className="form-group">
-          <label htmlFor="password">Contraseña:</label>
+          <label htmlFor="password">Ingrese una contraseña</label>
           <div className="password-input-container">
             <input
               type={showPassword ? "text" : "password"}
@@ -81,13 +82,13 @@ const CrearUsuario = () => {
               className="eye-button"
               onClick={() => setShowPassword(!showPassword)}
             >
-              {showPassword ? "👁️" : "👁️‍🗨️"}
+              {showPassword ? "ocultar" : "ver"}
             </button>
           </div>
           {errors.password && <span>{errors.password.message}</span>}
         </div>
         <div className="form-group">
-          <label htmlFor="confirmPassword">Confirmar Contraseña:</label>
+          <label htmlFor="confirmPassword">Vuelva a ingresar su contraseña</label>
           <div className="password-input-container">
             <input
               type={showConfirmPassword ? "text" : "password"}
@@ -108,7 +109,7 @@ const CrearUsuario = () => {
               className="eye-button"
               onClick={() => setShowConfirmPassword(!showConfirmPassword)}
             >
-              {showConfirmPassword ? "👁️" : "👁️‍🗨️"}
+              {showConfirmPassword ? "ocultar" : "ver"}
             </button>
           </div>
           {errors.confirmPassword && (
