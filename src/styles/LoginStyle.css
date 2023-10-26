@@ -1,6 +1,6 @@
 body {
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -14,9 +14,9 @@ body {
 
 .login-box {
   text-align: center;
-  background-color: #2a2a2a;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
   padding: 40px;
-  border-radius: 8px;
+  border-radius: 0; /* Eliminamos el borde redondeado */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
   width: 300px;
 }
@@ -34,25 +34,24 @@ body {
 .input-field-login {
   width: calc(100% - 20px);
   padding: 10px;
-  border: 1px solid #ffffff;
-  background-color: #2a2a2a;
-  color: #ffffff;
+  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
   border-radius: 4px;
   font-size: 14px;
-  outline: none; /* Elimina el contorno del input al hacer clic en él */
+  outline: none;
 }
 
 /* Estilos para el captcha */
 .g-recaptcha {
   margin: 0 auto;
   margin-top: 10px;
-  text-align: center; /* Centra el contenido del captcha */
-  max-width: 304px; /* Establece un ancho máximo para el captcha */
+  text-align: center;
+  max-width: 304px;
 }
 
-.login-button,
-.create-account-button {
-  background-color: #007bff;
+.login-button {
+  background-color: #21641b;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -62,41 +61,55 @@ body {
   text-decoration: none;
   margin-top: 10px;
   display: block;
-  width: 100%;
+  width: 760px;
+  font-size: 14px;
+}
+.create-account-button {
+  background-color: #21641b;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+  width: 720px;
   font-size: 14px;
 }
 
 .login-button:hover,
 .create-account-button:hover {
-  background-color: #0056b3;
+  background-color: #0a3306;
 }
 
 .g-recaptcha {
-  min-height: 78px; /* Establece una altura mínima para el contenedor de ReCAPTCHA */
+  min-height: 78px;
 }
 
 .g-recaptcha {
-  z-index: 9999; /* Establece un z-index alto para el contenedor de ReCAPTCHA */
+  z-index: 9999;
   .login-button {
-    margin-top: 20px; /* Ajusta el margen superior del botón de iniciar sesión */
+    margin-top: 20px;
   }
 }
 
 .error-message {
-  color: red; /* Establece el color del texto de error a rojo */
+  color: red;
   margin-top: 10px;
 }
 
 /* Media query para pantallas de hasta 600px de ancho */
 @media (max-width: 600px) {
   .login-box {
-    width: 90%; /* Ajusta el ancho del cuadro de login para pantallas pequeñas */
+    width: 90%;
   }
 
   .input-field-login,
   .login-button,
   .create-account-button {
-    font-size: 12px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas pequeñas */
+    font-size: 12px;
   }
 
   /* Otras reglas CSS específicas para pantallas pequeñas */
@@ -105,13 +118,13 @@ body {
 /* Media query para pantallas de 601px a 1024px de ancho */
 @media (min-width: 601px) and (max-width: 1024px) {
   .login-box {
-    width: 70%; /* Ajusta el ancho del cuadro de login para pantallas medianas */
+    width: 70%;
   }
 
   .input-field-login,
   .login-button,
   .create-account-button {
-    font-size: 14px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas medianas */
+    font-size: 14px;
   }
 
   /* Otras reglas CSS específicas para pantallas medianas */
@@ -120,13 +133,13 @@ body {
 /* Media query para pantallas de 1025px de ancho en adelante */
 @media (min-width: 1025px) {
   .login-box {
-    width: 50%; /* Ajusta el ancho del cuadro de login para pantallas grandes */
+    width: 50%;
   }
 
   .input-field-login,
   .login-button,
   .create-account-button {
-    font-size: 16px; /* Ajusta el tamaño de fuente de los campos y botones para pantallas grandes */
+    font-size: 16px;
   }
 
   /* Otras reglas CSS específicas para pantallas grandes */

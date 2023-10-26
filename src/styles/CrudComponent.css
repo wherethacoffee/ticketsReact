@@ -1,28 +1,29 @@
 .crud-container {
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #638191; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 8px;
+  border-radius: 0; /* Eliminamos el borde redondeado */
 }
 
 .crud-container h1 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
+  color: #000000; /* Cambiamos el color del encabezado a oscuro */
 }
 
 .container-crud {
-  background-color: #303030;
+  background-color: #638191; /* Cambiamos el color de fondo a claro */
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Alineamos los botones a la izquierda */
   margin-bottom: 20px;
-  border-radius: 8px;
+  border-radius: 0; /* Eliminamos el borde redondeado */
 }
 
 .container-crud button {
-  background-color: #ff4646;
+  background-color: #37a32e;
   color: #ffffff;
   border: none;
   padding: 15px 30px;
@@ -35,12 +36,13 @@
 }
 
 .container-crud button:hover {
-  background-color: #d93232;
+  background-color: #37a32e;
 }
 
 .form-container {
   display: flex;
   flex-direction: column;
+  color: #000000; /* Cambiamos el color del texto a oscuro */
 }
 
 .form-container label {
@@ -54,21 +56,21 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
   border-radius: 8px;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
   box-sizing: border-box;
 }
 
 .button-group {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start; /* Alineamos los botones a la izquierda */
   margin-top: 20px;
 }
 
 .button-group button {
-  background-color: #ff4646;
+  background-color: #37a32e;
   color: #ffffff;
   border: none;
   padding: 15px 30px;
@@ -76,8 +78,12 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin: 0 10px;
+  margin-right: 10px; /* Añadimos margen derecho para separar los botones */
   text-align: center;
+}
+
+.button-group button:last-child {
+  margin-right: 0; /* Eliminamos el margen derecho del último botón */
 }
 
 .button-group button:hover {
@@ -85,52 +91,30 @@
 }
 
 .form-container-crud {
-  background-color: #303030;
-  border-radius: 8px;
+  background-color: #638191; /* Cambiamos el color de fondo a claro */
+  border-radius: 0; /* Eliminamos el borde redondeado */
   padding: 20px;
   margin-bottom: 20px;
+  color: #000000; /* Cambiamos el color del texto a oscuro */
 }
 
-.form-container label {
+.form-container-crud label {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #000000; /* Cambiamos el color del texto a oscuro */
 }
 
 .form-container-crud input[type="text"],
 .form-container-crud input[type="email"],
 .form-container-crud input[type="password"],
-.form-container select {
+.form-container-crud select {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
   border-radius: 8px;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
   box-sizing: border-box;
-}
-
-.button-group {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.button-group button {
-  background-color: #ff4646;
-  color: #ffffff;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin: 0 10px;
-  text-align: center;
-}
-
-.button-group button:hover {
-  background-color: #d93232;
 }
 
 /* TablaEstilos.css */
@@ -149,5 +133,6 @@
 }
 
 .mi-tabla-estilizada th {
-  background-color: #ff4646;
+  background-color: #37a32e;
+  color: #ffffff; /* Cambiamos el color del texto del encabezado a oscuro */
 }

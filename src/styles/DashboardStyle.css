@@ -1,19 +1,19 @@
 .dashboard-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #303030;
-    border-radius: 8px;
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  /* Estilos para los gráficos (aún no implementados) */
-  
-  /* Estilos para los filtros (aún no implementados) */
-  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  border-radius: 0; /* Eliminamos el borde redondeado */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
+  text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #000000; /* Cambiamos el color del encabezado a oscuro */
+}
+
+/* Estilos para los gráficos (aún no implementados) */
+
+/* Estilos para los filtros (aún no implementados) */

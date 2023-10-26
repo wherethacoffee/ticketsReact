@@ -1,7 +1,7 @@
 /* Estilos generales para el contenedor principal */
 .container-tickets {
   display: flex;
-  background-color: #303030; /* Color de fondo del contenedor */
+  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
   border-radius: 10px;
   padding: 20px;
 }
@@ -9,23 +9,23 @@
 /* Estilos para el contenedor del contenido principal y formulario */
 .content-container {
   display: flex;
-  width: 100%; /* Ocupa todo el ancho del contenedor principal */
+  width: 100%;
   padding: 10px;
 }
 
 /* Estilos para el contenido principal */
 .main-content {
-  flex: 1; /* Hace que este contenedor ocupe todo el espacio disponible */
-  background-color: #1f1f1f;
+  flex: 1;
+  background-color: #627d92; /* Cambiamos el color de fondo a claro */
   padding: 20px;
   border-radius: 5px;
-  margin-right: 20px; /* Márgenes a la derecha para separarlo del formulario */
+  margin-right: 20px;
 }
 
 /* Estilos para el contenedor del formulario */
 .form-container {
-  width: 35%; /* Porcentaje del espacio disponible para el formulario */
-  background-color: #1f1f1f;
+  width: 35%;
+  background-color: #627d92; /* Cambiamos el color de fondo a claro */
   padding: 20px;
   border-radius: 5px;
 }
@@ -38,14 +38,14 @@
 }
 
 .search-container input[type="text"] {
-  flex: 1; /* Hace que el campo de búsqueda ocupe todo el espacio disponible horizontalmente */
+  flex: 1;
   padding: 10px;
   margin-right: 10px;
 }
 
 .search-container button {
   padding: 10px 20px;
-  background-color: #ff4646;
+  background-color: #37a32e;
   color: white;
   border: none;
   border-radius: 5px;
@@ -59,7 +59,7 @@
 }
 
 .turno-list li {
-  background-color: #303030;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 
 /* Estilos para el contenedor de detalles del turno */
 .details-container {
-  background-color: #303030;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
   padding: 20px;
   border-radius: 5px;
 }
@@ -76,21 +76,21 @@
 /* Estilos para los botones en el contenedor de acciones */
 .actions-container button {
   margin-right: 10px;
-  background-color: #ff4646;
+  background-color: #37a32e;
   color: white;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .actions-container button:last-child {
-  margin-right: 0; /* Elimina el margen derecho del último botón para evitar espacio adicional */
+  margin-right: 0;
 }
 
 /* Estilos para el formulario de registro de nuevo turno */
 .form-container button {
   margin-top: 10px;
-  background-color: #ff4646;
+  background-color: #37a32e;
   color: white;
   border: none;
   border-radius: 5px;

@@ -1,15 +1,20 @@
 .container {
   margin-top: 100px;
-  max-width: 400px;
+  max-width: 600px; /* Aumentamos el ancho máximo */
   margin: 0 auto;
   padding: 20px;
-  background-color: #303030;
-  color: #ffffff;
-  border-radius: 8px;
-  text-align: center;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
+  border-radius: 0; /* Eliminamos el borde redondeado */
+  text-align: left; /* Alineamos el texto a la izquierda */
 }
 
 .form-group {
+  margin-bottom: 20px;
+}
+
+.signup-logo {
+  width: 100px;
   margin-bottom: 20px;
 }
 
@@ -18,10 +23,10 @@
   padding: 8px;
   margin-top: 8px;
   font-size: 16px;
-  border: 1px solid #ffffff;
+  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
   border-radius: 4px;
-  background-color: #1f1f1f;
-  color: #ffffff;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
 }
 
 .password-input-container {
@@ -32,26 +37,27 @@
 .eye-button {
   background: none;
   border: none;
-  color: #ffffff;
+  color: #000000; /* Cambiamos el color del icono a oscuro */
   cursor: pointer;
   font-size: 20px;
   margin-left: 10px;
 }
 
 .btn-submit {
-  background-color: #007bff;
+  background-color: #37a32e; /* Cambiamos el color de fondo a verde */
   color: #ffffff;
   border: none;
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 18px;
   transition: background-color 0.3s ease;
 }
 
 .btn-submit:hover {
-  background-color: #0056b3;
+  background-color: #37a32e; /* Cambiamos el color de fondo al mismo verde en el hover */
 }
+
 @media screen and (max-width: 600px) {
   .container {
     max-width: 300px;

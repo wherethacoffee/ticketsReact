@@ -1,76 +1,78 @@
 body {
-    background-color: #1f1f1f;
-    color: #ffffff;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .form-container-alumnos {
-    width: 80%;
-    margin-top: 50px;
-    background-color: #303030;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .form h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #ffffff;
-  }
-  
-  button {
-    background-color: #ff4646;
-    color: #ffffff;
-    border: none;
-    padding: 12px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #d93232;
-  }
+  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
+  color: #000000; /* Cambiamos el color del texto a oscuro */
+  margin: 0;
+  padding: 0;
+}
 
-  .buttons-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-    /* Asegúrate de que no haya márgenes o padding en este contenedor */
-  }
-  
-  .button-container {
-    background-color: #ff4646;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    /* Agrega márgenes horizontales para separar los botones */
-    margin-right: 10px; /* Ajusta según sea necesario */
-  }
-  
-  .button-container:last-child {
-    margin-right: 0; /* Elimina el margen derecho del último botón */
-  }
-  
-  .button-container:hover {
-    background-color: #d93232;
-  }
-  
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Añadimos un poco de espacio interior */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.form-container-alumnos {
+  width: 80%;
+  margin-top: 50px;
+  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  padding: 20px;
+  border-radius: 0; /* Eliminamos el borde redondeado */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alineamos los elementos a la izquierda */
+  gap: 20px;
+  color: #000000; /* Cambiamos el color del texto a oscuro */
+}
+
+.form h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #000000; /* Cambiamos el color del encabezado a oscuro */
+}
+
+button {
+  background-color: #37a32e;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #37a32e;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: flex-start; /* Alineamos los botones a la izquierda */
+  margin-top: 20px;
+  /* Asegúrate de que no haya márgenes o padding en este contenedor */
+}
+
+.button-container {
+  background-color: #37a32e;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+
+.button-container:last-child {
+  margin-right: 0;
+}
+
+.button-container:hover {
+  background-color: #37a32e;
+}
