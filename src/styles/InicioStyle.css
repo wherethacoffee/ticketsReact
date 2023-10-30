@@ -1,8 +1,8 @@
 /* styles/InicioStyle.css */
 
 body {
-  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  background-color: #bead9a;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -23,8 +23,8 @@ body {
   justify-content: space-between;
   margin-bottom: 20px;
   padding: 20px;
-  background-color: #638191; /* Cambiamos el color de fondo a claro */
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  background-color: #638191;
+  border-radius: 0;
 }
 
 .heading {
@@ -32,67 +32,50 @@ body {
 }
 
 .ticket-img {
-  width: 400px;
-  margin-top: 70px;
+  max-width: 100%; /* Hace que la imagen sea sensible al tamaño de la pantalla */
+  margin-top: 20px; /* Ajusta según sea necesario */
   margin-bottom: 20px;
 }
 
-/* Agrega un contenedor para los botones y ajusta su estilo */
 .button-container {
   display: flex;
-  flex-direction: column; /* Mostrar los botones en una columna */
-  align-items: flex-start; /* Alinea los botones a la izquierda */
+  flex-direction: column;
+  align-items: center; /* Alinea los botones al centro en pantallas pequeñas */
   margin: 0;
 }
 
-/* Estilos para los botones */
-.small-button {
-  background-color: #21641b;
-  color: #ffffff;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  margin: 10px;
-  text-align: center;
-}
-
+.small-button,
 .large-button {
-  width: 200px; /* Establece el ancho fijo para los botones, ajusta según sea necesario */
-  height: 50px; /* Establece la altura fija para los botones, ajusta según sea necesario */
+  width: auto; /* Elimina el ancho fijo de los botones */
+  height: auto; /* Elimina la altura fija de los botones */
   background-color: #21641b;
   justify-content: center;
   align-items: center;
-  color: white; /* Color del texto del botón */
-  text-decoration: none; /* Elimina el subrayado del enlace */
-  margin-bottom: 10px; /* Espaciado entre los botones */
-  border: none; /* Elimina el borde del botón */
-  border-radius: 5px; /* Borde redondeado del botón */
-  font-size: 16px; 
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
   margin-left: 5px;
-  margin-right: 5px
+  margin-right: 5px;
 }
 
 .small-button:hover,
-.large-button-inicio:hover {
+.large-button:hover {
   background-color: #0a3306;
 }
 
-/* Estilos específicos para el botón "Iniciar Sesión" */
 .small-button {
   padding: 10px 20px;
   margin-bottom: 20px;
   text-decoration: none;
 }
 
-/* Estilos específicos para el botón "Crear Ticket" */
 .large-button:first-of-type {
   margin-top: 20px;
 }
 
-/* Estilos específicos para el botón "Modificar Tickets" */
 .large-button:last-of-type {
   margin-bottom: 20px;
 }
@@ -124,6 +107,7 @@ body {
   .large-button {
     font-size: 18px;
     padding: 14px 25px;
+    display: flex;
   }
 
   /* Otras reglas CSS específicas para pantallas pequeñas */
@@ -139,6 +123,7 @@ body {
   .large-button {
     font-size: 16px;
     padding: 12px 20px;
+    display: flex;
   }
 
   /* Otras reglas CSS específicas para pantallas medianas */

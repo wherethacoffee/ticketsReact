@@ -1,36 +1,62 @@
 /* Modal.css */
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    padding-top: 60px;
-  }
-  
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #303030;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
   .modal-content {
-    background-color: #303030;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
+      width: 90%;
   }
-  
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .modal-content {
+      width: 70%;
   }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .modal-content {
+      width: 60%;
   }
-  
+
+  /* Otras reglas CSS específicas para pantallas grandes */
+}

@@ -2,17 +2,17 @@
   max-width: 500px;
   margin: 0 auto;
   padding: 40px;
-  background-color: #f0e0cf; /* Cambiamos el color de fondo a claro */
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  background-color: #f0e0cf;
+  border-radius: 0;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  color: #000000;
 }
 
 .container h1 {
   font-size: 24px;
   text-align: center;
   margin-bottom: 20px;
-  color: #000000; /* Cambiamos el color del encabezado a oscuro */
+  color: #000000;
 }
 
 label {
@@ -26,9 +26,9 @@ input[type="email"],
 select {
   width: 100%;
   padding: 10px;
-  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #000000;
   border-radius: 4px;
   font-size: 14px;
   margin-bottom: 20px;
@@ -59,4 +59,76 @@ span {
 
 .btn-submit-ticket:hover {
   background-color: #37a32e;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+
+  .container h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    font-size: 12px;
+  }
+
+  .btn-submit-ticket {
+    padding: 8px 16px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    max-width: 70%;
+  }
+
+  .container h1 {
+    font-size: 22px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    font-size: 14px;
+  }
+
+  .btn-submit-ticket {
+    padding: 9px 17px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 60%;
+  }
+
+  .container h1 {
+    font-size: 26px;
+  }
+
+  input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  select {
+    font-size: 16px;
+  }
+
+  .btn-submit-ticket {
+    padding: 12px 20px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
 }

@@ -1,6 +1,7 @@
+/* Estilos generales para el contenedor principal */
 body {
-  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  background-color: #bead9a;
+  color: #000000;
   margin: 0;
   padding: 0;
 }
@@ -9,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* Añadimos un poco de espacio interior */
+  padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -17,24 +18,24 @@ body {
 .form-container-alumnos {
   width: 80%;
   margin-top: 50px;
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  background-color: #ffffff;
   padding: 20px;
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  border-radius: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Alineamos los elementos a la izquierda */
+  align-items: flex-start;
   gap: 20px;
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  color: #000000;
 }
 
 .form h2 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #000000; /* Cambiamos el color del encabezado a oscuro */
+  color: #000000;
 }
 
 button {
@@ -53,9 +54,8 @@ button:hover {
 
 .buttons-container {
   display: flex;
-  justify-content: flex-start; /* Alineamos los botones a la izquierda */
+  justify-content: flex-start;
   margin-top: 20px;
-  /* Asegúrate de que no haya márgenes o padding en este contenedor */
 }
 
 .button-container {
@@ -75,4 +75,67 @@ button:hover {
 
 .button-container:hover {
   background-color: #37a32e;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .form-container-alumnos {
+    width: 90%;
+  }
+
+  .form h2 {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 10px 18px;
+  }
+
+  .button-container {
+    padding: 8px 16px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .form-container-alumnos {
+    width: 70%;
+  }
+
+  .form h2 {
+    font-size: 22px;
+  }
+
+  button {
+    padding: 11px 19px;
+  }
+
+  .button-container {
+    padding: 9px 17px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .form-container-alumnos {
+    width: 60%;
+  }
+
+  .form h2 {
+    font-size: 26px;
+  }
+
+  button {
+    padding: 14px 22px;
+  }
+
+  .button-container {
+    padding: 12px 20px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
 }

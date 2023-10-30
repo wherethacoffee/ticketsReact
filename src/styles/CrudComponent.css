@@ -1,25 +1,25 @@
 .crud-container {
-  background-color: #638191; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  background-color: #638191;
+  color: #000000;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  border-radius: 0;
 }
 
 .crud-container h1 {
   font-size: 36px;
   margin-bottom: 20px;
   text-align: center;
-  color: #000000; /* Cambiamos el color del encabezado a oscuro */
+  color: #000000;
 }
 
 .container-crud {
-  background-color: #638191; /* Cambiamos el color de fondo a claro */
+  background-color: #638191;
   display: flex;
-  justify-content: flex-start; /* Alineamos los botones a la izquierda */
+  justify-content: flex-start;
   margin-bottom: 20px;
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  border-radius: 0;
 }
 
 .container-crud button {
@@ -42,7 +42,7 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  color: #000000;
 }
 
 .form-container label {
@@ -56,16 +56,16 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
+  border: 1px solid #000000;
   border-radius: 8px;
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  background-color: #ffffff;
+  color: #000000;
   box-sizing: border-box;
 }
 
 .button-group {
   display: flex;
-  justify-content: flex-start; /* Alineamos los botones a la izquierda */
+  justify-content: flex-start;
   margin-top: 20px;
 }
 
@@ -78,12 +78,12 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
-  margin-right: 10px; /* Añadimos margen derecho para separar los botones */
+  margin-right: 10px;
   text-align: center;
 }
 
 .button-group button:last-child {
-  margin-right: 0; /* Eliminamos el margen derecho del último botón */
+  margin-right: 0;
 }
 
 .button-group button:hover {
@@ -91,16 +91,16 @@
 }
 
 .form-container-crud {
-  background-color: #638191; /* Cambiamos el color de fondo a claro */
-  border-radius: 0; /* Eliminamos el borde redondeado */
+  background-color: #638191;
+  border-radius: 0;
   padding: 20px;
   margin-bottom: 20px;
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  color: #000000;
 }
 
 .form-container-crud label {
   margin-bottom: 10px;
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  color: #000000;
 }
 
 .form-container-crud input[type="text"],
@@ -110,10 +110,10 @@
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
-  border: 1px solid #000000; /* Cambiamos el color del borde a oscuro */
+  border: 1px solid #000000;
   border-radius: 8px;
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
-  color: #000000; /* Cambiamos el color del texto a oscuro */
+  background-color: #ffffff;
+  color: #000000;
   box-sizing: border-box;
 }
 
@@ -134,5 +134,101 @@
 
 .mi-tabla-estilizada th {
   background-color: #37a32e;
-  color: #ffffff; /* Cambiamos el color del texto del encabezado a oscuro */
+  color: #ffffff;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .crud-container {
+    max-width: 90%;
+  }
+
+  .crud-container h1 {
+    font-size: 28px;
+  }
+
+  .container-crud {
+    flex-wrap: wrap;
+  }
+
+  .container-crud button {
+    padding: 12px 24px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"],
+  .form-container select {
+    font-size: 12px;
+  }
+
+  .button-group button {
+    padding: 12px 24px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .crud-container {
+    max-width: 70%;
+  }
+
+  .crud-container h1 {
+    font-size: 32px;
+  }
+
+  .container-crud {
+    flex-wrap: wrap;
+  }
+
+  .container-crud button {
+    padding: 13px 26px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"],
+  .form-container select {
+    font-size: 14px;
+  }
+
+  .button-group button {
+    padding: 14px 28px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .crud-container {
+    max-width: 60%;
+  }
+
+  .crud-container h1 {
+    font-size: 40px;
+  }
+
+  .container-crud {
+    flex-wrap: nowrap;
+  }
+
+  .container-crud button {
+    padding: 16px 32px;
+  }
+
+  .form-container input[type="text"],
+  .form-container input[type="email"],
+  .form-container input[type="password"],
+  .form-container select {
+    font-size: 16px;
+  }
+
+  .button-group button {
+    padding: 18px 36px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
 }

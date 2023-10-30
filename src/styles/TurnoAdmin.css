@@ -1,7 +1,7 @@
 /* Estilos generales para el contenedor principal */
 .container-tickets {
   display: flex;
-  background-color: #bead9a; /* Cambiamos el color de fondo a claro */
+  background-color: #bead9a;
   border-radius: 10px;
   padding: 20px;
 }
@@ -16,7 +16,7 @@
 /* Estilos para el contenido principal */
 .main-content {
   flex: 1;
-  background-color: #627d92; /* Cambiamos el color de fondo a claro */
+  background-color: #627d92;
   padding: 20px;
   border-radius: 5px;
   margin-right: 20px;
@@ -25,7 +25,7 @@
 /* Estilos para el contenedor del formulario */
 .form-container {
   width: 35%;
-  background-color: #627d92; /* Cambiamos el color de fondo a claro */
+  background-color: #627d92;
   padding: 20px;
   border-radius: 5px;
 }
@@ -59,7 +59,7 @@
 }
 
 .turno-list li {
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  background-color: #ffffff;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -68,7 +68,7 @@
 
 /* Estilos para el contenedor de detalles del turno */
 .details-container {
-  background-color: #ffffff; /* Cambiamos el color de fondo a claro */
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
@@ -94,4 +94,37 @@
   color: white;
   border: none;
   border-radius: 5px;
+}
+
+/* Media query para pantallas de hasta 600px de ancho */
+@media (max-width: 600px) {
+  .content-container {
+    flex-direction: column;
+  }
+
+  .main-content,
+  .form-container {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Otras reglas CSS específicas para pantallas pequeñas */
+}
+
+/* Media query para pantallas de 601px a 1024px de ancho */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container-tickets {
+    padding: 10px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas medianas */
+}
+
+/* Media query para pantallas de 1025px de ancho en adelante */
+@media (min-width: 1025px) {
+  .container-tickets {
+    padding: 20px;
+  }
+
+  /* Otras reglas CSS específicas para pantallas grandes */
 }
